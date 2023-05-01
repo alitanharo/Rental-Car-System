@@ -6,16 +6,29 @@ This is a simple car rental system designed to allow users to rent cars from a f
 * Rentals: The records of all rental transactions in the system
 
 # Installation
-Clone the repository to your local machine
-Run npm install to install all the dependencies
+Clone the repository to your local machine,
+Run npm install to install all the dependencies.
 Set up the environment variables by creating a .env file at the root directory of the project and adding the following variables:
-makefile
-Copy code
+"makefile
 MONGO_URI=<your_mongo_uri>
 PORT=<port_number>
 JWT_SECRET=<your_secret_key>
-Run npm start to start the server
-Use a REST client like Postman to test the endpoints
+Run npm start to start the server"
+Use a REST client like Postman to test the endpoints.
+To initialize cars in the database, you can send a POST request that includes an instance of the car object in JSON format, as follows:
+
+json
+" {
+  "plate": "ABC-123",
+  "category": "Truck",
+  "baseDayPrice": 75,
+  "baseKmPrice": 0.25,
+  "rented": false,
+  "imgUrl": "https://example.com/image.jpg",
+  "currentKm": 15000
+}  "
+
+This JSON object represents a car instance with the specified plate number, category, base day price, base kilometer price, rental status, image URL, and current mileage. You can use this object as a template to create and store new car instances in your database by sending a POST request with the desired car details.
 
 # Start server in terminal:
 * cd backend
