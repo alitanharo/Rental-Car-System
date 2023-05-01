@@ -36,20 +36,20 @@ This JSON object represents a car instance with the specified plate number, cate
 * npm start
 
 # API Endpoints
-Cars
+
 * GET /api/car: Get all cars in the fleet
 * POST /api/car: Add a new car to the fleet
 * GET /api/car/:plate: Get a specific car by its plate number
 * PUT /api/car/:plate: Update a specific car by its plate number
 * DELETE /api/car/:plate: Delete a specific car by its plate number
-Rentals
+
 * POST /api/rental/pickup: Register a new rental pick-up
 * PUT /api/rental/return: Register a rental return
 * GET /api/rental/rentals: Get a list of all rentals
 * GET /api/rental/bookingnumber/:bookingNumber: Get a specific rental record by its booking number
 * GET /api/rental/plate/:plate: Get a specific rental record by its car plate number
 * DELETE /api/rental/:bookingNumber: Delete a specific rental record by its booking number
-Authentication/users
+
 * POST /api/user/signup: Register a new user
 * POST /api/user/signin: Log in an existing user
 * POST /api/user/logout: Log out an existing user
