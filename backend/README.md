@@ -18,9 +18,9 @@ Run npm start to start the server
 Use a REST client like Postman to test the endpoints
 
 # Start server in terminal:
-* <cd backend>
-* <npm install>
-* <npm start>
+* cd backend
+* npm install
+* npm start
 
 # API Endpoints
 Cars
